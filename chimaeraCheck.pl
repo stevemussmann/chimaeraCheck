@@ -3,8 +3,7 @@
 use warnings;
 use strict;
 use Getopt::Std;
-use Chart::Gnuplot;
-use Data::Dumper;
+#use Data::Dumper;
 
 # kill program and print help if no command line arguments were given
 if( scalar( @ARGV ) == 0 ){
