@@ -186,12 +186,18 @@ sub help{
   print "When submitting bugs please include all input files, options used for the program, and all error messages that were printed to the screen\n\n";
   
   print "Program Options:\n";
-  print "\t\t[ -1 | -2 | -f | -F | -h | -r ]\n\n";
+  print "\t\t[ -1 | -2 | -c | -C | -f | -F | -h | -o | -O | -r ]\n\n";
   print "\t-1:\tUse this to specify the first restriction enzyme.\n";
   print "\t\tProgram will terminate if no enzyme is specified.\n\n";
 
   print "\t-2:\tUse this to specify the second restriction enzyme.\n";
   print "\t\tProgram will terminate if no enzyme is specified.\n\n";
+  
+  print "\t-c:\tUse this to specify the output file name containing chimaeras for read 1.\n";
+  print "\t\t[optional] The default output uses .chim.fq as the file extension.\n\n";
+
+  print "\t-C:\tUse this to specify the output file name containing chimaeras for read 2.\n";
+  print "\t\t[optional] The default output uses .chim.fq as the file extension.\n\n";
 
   print "\t-f:\tUse this to specify the input file name for read 1.\n";
   print "\t\tProgram will terminate if no file name is provided.\n\n";
@@ -201,6 +207,12 @@ sub help{
 
   print "\t-h:\tUse this command to display this help message.\n";
   print "\t\tProgram will terminate after displaying this help message.\n\n";
+
+  print "\t-o:\tUse this to specify the output file name containing retained reads for read 1.\n";
+  print "\t\t[optional] The default output uses .kept.fq as the file extension.\n\n";
+
+  print "\t-O:\tUse this to specify the output file name containing retained reads for read 2.\n";
+  print "\t\t[optional] The default output uses .kept.fq as the file extension.\n\n";
 
   print "\t-r:\tUse this command to display a list of supported restriction enzymes.\n";
   print "\t\tProgram will terminate after displaying the enzyme list.\n\n";
